@@ -27,9 +27,9 @@ module.exports = {
     filename: "bundle.js",
   },
   plugins: [
-    /* Necessary to use HTMLPlugin to inject the bundle into the popup.html */
+    /* Necessary to use HTMLPlugin to inject the bundle into the index.html */
     new HTMLPlugin({
-      template: "./public/popup.html",
+      template: "./public/index.html",
     }),
     new CopyWebpackPlugin({
       patterns: [
@@ -37,7 +37,7 @@ module.exports = {
           from: "public",
           to: "",
           globOptions: {
-            ignore: ["**/popup.html"], // This line excludes popup.html
+            ignore: ["**/index.html"], // This line excludes index.html
           },
         },
       ],
