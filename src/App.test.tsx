@@ -5,7 +5,7 @@ import App from "./App";
 describe("App", () => {
   it("renders the main heading", () => {
     render(<App />);
-    const headingElement = screen.getByText(/Snippet Collector/i);
+    const headingElement = screen.getByText(/Starter Extension/i);
     expect(headingElement).toBeInTheDocument();
   });
 
